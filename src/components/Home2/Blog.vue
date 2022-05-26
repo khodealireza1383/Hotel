@@ -1,9 +1,9 @@
 <template>
-  <div class="slider">
-    <!-- strat details -->
-    <div class="title-slider">
-      <p>بهترین انتخاب ها برای شما</p>
+  <div class="blog">
+    <div class="title-blog">
+      <h2>بهترین انتخاب ها برای شما</h2>
     </div>
+    <!-- one blog -->
     <div class="content-slider">
       <div class="item-right">
         <div class="detaile-room">
@@ -38,42 +38,14 @@
           </div>
         </div>
         <div class="img-room">
-          <img src="./hotel.jpg" alt="" />
+          <img src="../HomePage/hotel.jpg" alt="" />
           <div class="bg-img"></div>
         </div>
       </div>
     </div>
-    <!-- finish details -->
-    <!-- start carosel -->
-    <div class="carosel">
-      <div class="btn btn-left">
-        <button @click="prev">
-          <span class="material-icons"> arrow_back_ios </span>
-        </button>
-      </div>
-      <div
-        class="slider-img"
-        :style="{
-          transform: `translateX(${index}px)`,
-          transition: `${transition}`,
-        }"
-      >
-        <img src="./hotel.jpg" alt="" class="img-slider" />
-        <img src="./hotel.jpg" alt="" class="img-slider" />
-        <img src="./hotel.jpg" alt="" class="img-slider" />
-        <img src="./hotel.jpg" alt="" class="img-slider" />
-      </div>
-      <div class="btn btn-right">
-        <button @click="next">
-          <span class="material-icons"> arrow_forward_ios </span>
-        </button>
-      </div>
-    </div>
-    <!-- finish carosel -->
-    <!-- start details 2 -->
-
-    <div class="content-slider left-top">
-      <div class="item-right left">
+    <!-- two blog -->
+<div class="content-slider">
+      <div class="item-right">
         <div class="detaile-room">
           <div class="title-room">
             <span>رویال </span>
@@ -97,6 +69,7 @@
                 <span class="material-icons"> star </span>
                 <span class="material-icons"> star </span>
                 <span class="material-icons"> star </span>
+                <span class="material-icons"> star </span>
               </div>
               <div class="btn-rezerv">
                 <button>دیدن اتاق</button>
@@ -104,81 +77,31 @@
             </div>
           </div>
         </div>
-        <div class="img-room left-img">
-          <img src="./hotel.jpg" alt="" />
+        <div class="img-room">
+          <img src="../HomePage/hotel.jpg" alt="" />
           <div class="bg-img"></div>
         </div>
       </div>
     </div>
-    <!-- finish detailes 2 -->
-    <!-- start  carosel2   -->
-    <div class="carosel top-slider">
-      <div class="btn btn-left">
-        <button @click="prev">
-          <span class="material-icons"> arrow_back_ios </span>
-        </button>
-      </div>
-      <div
-        class="slider-img"
-        :style="{
-          transform: `translateX(${index}px)`,
-          transition: `${transition}`,
-        }"
-      >
-        <img src="./hotel.jpg" alt="" class="img-slider" />
-        <img src="./hotel.jpg" alt="" class="img-slider" />
-        <img src="./hotel.jpg" alt="" class="img-slider" />
-        <img src="./hotel.jpg" alt="" class="img-slider" />
-      </div>
-      <div class="btn btn-right">
-        <button @click="next">
-          <span class="material-icons"> arrow_forward_ios </span>
-        </button>
-      </div>
-    </div>
+
   </div>
 </template>
+
 <script>
-import carousel from "vue-owl-carousel";
-export default {
-  data() {
-    return {
-      index: 0,
-      transition: "transform 0.4s ease",
-    };
-  },
-  components: { carousel },
-  methods: {
-    next() {
-      console.log(this.index);
-      if (this.index === -1500) {
-        (this.transition = "none"), (this.index = 0);
-      } else {
-        this.transition = "transform 0.4s ease";
-        this.index -= 500;
-      }
-    },
-    prev() {
-      if (this.index === 0) {
-        this.transition = "none";
-        this.index = 1500;
-      } else {
-        this.transition = "transform 0.2s ease";
-        this.index += 500;
-      }
-    },
-  },
-};
+export default {};
 </script>
+
 <style scoped>
-.title-slider {
+.title-blog {
   width: 100%;
-  text-align: center;
-  position: relative;
-  top: -30px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.title-slider p {
-  font-size: 60px;
+.title-blog h2 {
+  font-size: 3rem;
+  font-weight: 400;
   color: rgb(58, 111, 179);
   text-shadow: 3px 0px 1px rgb(139, 185, 245);
 }
@@ -188,14 +111,13 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
-  top: -60px;
 }
 .item-right {
   width: 80%;
   height: 230px;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 .item-right .detaile-room {
   width: 70%;
@@ -216,7 +138,7 @@ export default {
 }
 .title-room span {
   color: white;
-  font-size: 40px;
+  font-size: 2.5rem;
   padding-right: 25px;
   position: relative;
   top: 10px;
@@ -269,6 +191,7 @@ export default {
   width: 250px;
   height: 230px;
   border-radius: 15px;
+  
 }
 .bg-img {
   width: 250px;
@@ -284,64 +207,5 @@ export default {
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-.carosel {
-  width: 73%;
-  height: 330px;
-  background-color: black;
-  overflow: hidden;
-  position: relative;
-  position: relative;
-  top: -50px;
-  margin: 0 auto;
-  border-radius: 15px;
-}
-.slider-img {
-  display: flex;
-  width: 2400px;
-}
-.img-slider {
-  width: 2400px;
-  height: 330px;
-}
-.btn {
-  outline: none;
-  border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  z-index: 10;
-  cursor: pointer;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.btn-left {
-  top: 50%;
-  transform: translateY(-50%);
-  left: 5px;
-}
-.btn-right {
-  top: 50%;
-  transform: translateY(-50%);
-  right: 5px;
-}
-.left-top {
-  position: relative;
-  top: -36px;
-}
-.left {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.left-img {
-  position: relative;
-  left: 20px;
-}
-.top-slider {
-  position: relative;
-  top: -22px;
-}
+
 </style>

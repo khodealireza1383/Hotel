@@ -8,8 +8,8 @@
       <div class="nav">
         <ul>
           <li><router-link to="/" class="link">صفحه اصلی </router-link></li>
-          <li class="active"><router-link to="/room" class="link" >اتاق ها </router-link></li>
-          <li ><router-link to="/blog" class="link" > وبلاگ  </router-link></li>
+          <li><router-link to="/room" class="link" >اتاق ها </router-link></li>
+          <li class="active"><router-link to="/blog" class="link" > وبلاگ </router-link></li>
           <li><router-link to="/about" class="link"> درباره ما </router-link></li>
           <li><router-link to="/contact" class="link">تماس با ما </router-link></li>
         </ul>
@@ -36,9 +36,9 @@ export default {
       that.windowTop=window.pageYOffset;
       console.log(that.windowTop)
       if(that.windowTop >300){
-        that.$refs.bg.classList.add('bg-nav2')
+        that.$refs.bg.classList.add('bg-nav1')
       }else{
-           that.$refs.bg.classList.remove('bg-nav2')
+           that.$refs.bg.classList.remove('bg-nav1')
       }
     })
   }
@@ -49,7 +49,7 @@ export default {
 .header {
   width: 100%;
   height: 65vh;
-  background-image: url(../../assets/img/bg-room.jpg);
+  background-image: url(../../assets/img/bg-blog.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,17 +65,17 @@ export default {
   transition: all 0.5s ease-in-out;
   z-index: 10;
 }
-.navbar.bg-nav2{
+.navbar.bg-nav1{
   position: fixed;
   top: 0;
- background-color:rgba(36, 76, 128,0.9);
-   height: 100px;
+  background-color:rgba(36, 76, 128,0.9);
+  height: 100px;
 }
-.navbar.bg-nav2 .button-login{
+.navbar.bg-nav1 .button-login{
 display: flex;
 justify-content: center;
 }
-.navbar.bg-nav2 p{
+.navbar.bg-nav1 p{
   display: none;
 }
 .header .bg-color{

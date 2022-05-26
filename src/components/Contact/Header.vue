@@ -1,24 +1,28 @@
 <template>
   <div class="header">
     <div class="bg-color">
-    <div class="navbar" ref="bg">
-      <div class="logo">
-        <img src="../../assets/img/logo(2).png" alt="" />
+      <div class="navbar" ref="bgg">
+        <div class="logo">
+          <img src="../../assets/img/logo(2).png" alt="" />
+        </div>
+        <div class="nav">
+          <ul>
+            <li><router-link to="/" class="link">صفحه اصلی </router-link></li>
+            <li><router-link to="/room" class="link">اتاق ها </router-link></li>
+            <li><router-link to="/blog" class="link"> وبلاگ </router-link></li>
+            <li>
+              <router-link to="/about" class="link"> درباره ما </router-link>
+            </li>
+            <li class="active">
+              <router-link to="/contact" class="link">تماس با ما </router-link>
+            </li>
+          </ul>
+        </div>
+        <div class="button-login">
+          <button>ورود و ثبت نام</button>
+          <p>0513-2677321</p>
+        </div>
       </div>
-      <div class="nav">
-        <ul>
-          <li><router-link to="/" class="link">صفحه اصلی </router-link></li>
-          <li class="active"><router-link to="/room" class="link" >اتاق ها </router-link></li>
-          <li ><router-link to="/blog" class="link" > وبلاگ  </router-link></li>
-          <li><router-link to="/about" class="link"> درباره ما </router-link></li>
-          <li><router-link to="/contact" class="link">تماس با ما </router-link></li>
-        </ul>
-      </div>
-      <div class="button-login">
-        <button>ورود و ثبت نام</button>
-        <p>0513-2677321</p>
-      </div>
-    </div>
     </div>
   </div>
 </template>
@@ -35,10 +39,10 @@ export default {
     window.addEventListener('scroll', function(){
       that.windowTop=window.pageYOffset;
       console.log(that.windowTop)
-      if(that.windowTop >300){
-        that.$refs.bg.classList.add('bg-nav2')
+      if(that.windowTop >200){
+        that.$refs.bgg.classList.add('bg-nav3')
       }else{
-           that.$refs.bg.classList.remove('bg-nav2')
+           that.$refs.bgg.classList.remove('bg-nav3')
       }
     })
   }
@@ -49,10 +53,10 @@ export default {
 .header {
   width: 100%;
   height: 65vh;
-  background-image: url(../../assets/img/bg-room.jpg);
+  background-image: url("../../assets/img/contact-bg.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+filter: brightness(90%);
 }
 .header .navbar {
   width: 100%;
@@ -65,34 +69,33 @@ export default {
   transition: all 0.5s ease-in-out;
   z-index: 10;
 }
-.navbar.bg-nav2{
+.navbar.bg-nav3{
   position: fixed;
   top: 0;
  background-color:rgba(36, 76, 128,0.9);
    height: 100px;
 }
-.navbar.bg-nav2 .button-login{
+.navbar.bg-nav3 .button-login{
 display: flex;
 justify-content: center;
 }
-.navbar.bg-nav2 p{
+.navbar.bg-nav3 p{
   display: none;
 }
-.header .bg-color{
+.header .bg-color {
   width: 100%;
   height: 100%;
-
 }
 .logo {
   width: 30%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-right:30px ;
+  padding-right: 30px;
 }
 .nav {
   width: 60%;
-text-align: left;
+  text-align: left;
 }
 .nav ul {
   list-style: none;
@@ -106,10 +109,9 @@ text-align: left;
   transition: all 0.4s ease-in-out;
 }
 .nav ul .link:hover {
-  color:var(--test);
+  color: var(--test);
   text-decoration: none;
   font-size: 28px;
-
 }
 .button-login {
   width: 40%;
@@ -118,7 +120,6 @@ text-align: left;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-
 }
 .button-login button {
   border: none;
@@ -136,30 +137,28 @@ text-align: left;
 .button-login p {
   color: #fff;
   font-size: 24px;
-position: absolute;
-left: 40px;
-top: 60px;
-
+  position: absolute;
+  left: 40px;
+  top: 60px;
 }
-.active{
+.active {
   position: relative;
 }
-.active::before{
+.active::before {
   content: "";
   position: absolute;
-bottom:-3px ;
-width: 80px;
-height: 3px;
-background-color: #fff;
+  bottom: -3px;
+  width: 80px;
+  height: 3px;
+  background-color: #fff;
 }
-.active::after{
+.active::after {
   content: "";
   position: absolute;
-bottom:-10px ;
-right: 2px;
-width: 60px;
-height: 3px;
-background-color: #fff;
+  bottom: -10px;
+  right: 2px;
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
 }
-
 </style>

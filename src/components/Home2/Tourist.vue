@@ -139,12 +139,11 @@ overflow-x: hidden;
 }
 .box-blog{
 display: flex;
-justify-content: center;
-align-items: center;
+justify-content: flex-start;
+align-items: flex-end;
 flex-direction: column;
-height: 80vh;
-position: relative;
-top: 350px;
+height:70vh;
+
 
 }
 .bg-blog{
