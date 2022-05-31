@@ -1,11 +1,23 @@
 <template>
   <div class="Home">
-<Header/>
-<Blog/>
-<Media/>
-<Tourist/>
-<Airplane/>
-<Footer/>
+    <!-- ---------- Header home page  -------------- -->
+    <Header />
+
+    <!-- ---------- about room and img room ---------- -->
+    <Blog />
+
+    <!-- In this part, there is our app and our social networks -->
+    <Media />
+
+    <!-- ----------- Description about the sights of Mashhad ---------------- -->
+
+    <Tourist />
+
+    <!-- --------------- Plane photos for beauty ---------- -->
+    <Airplane />
+
+    <!-- ----------------  And the last part of the home page -------------- -->
+    <Footer />
   </div>
 </template>
 
@@ -17,10 +29,9 @@ import Tourist from "../components/Home2/Tourist.vue";
 import Airplane from "../components/Home2/Airplane.vue";
 import Footer from "../components/Footer/Footer.vue";
 export default {
-components:{ Header,Blog,Media,Tourist,Airplane, Footer}
-}
+  components: { Header, Blog, Media, Tourist, Airplane, Footer },
+};
 </script>
 
 <style scoped>
-
 </style>

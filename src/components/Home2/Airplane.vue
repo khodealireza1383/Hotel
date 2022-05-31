@@ -57,4 +57,64 @@ export default {};
 
     
 } 
+@media only screen and (max-width: 1200px) {
+.airplane{
+  height: 55vh;
+}
+.container{
+  height: 220px;
+  display: flex;
+  align-items: flex-start;
+}
+}
+@media only screen and (max-width: 1024px) {
+.airplane{
+  height: 45vh;
+}
+.container{
+  height: 110px;
+  display: flex;
+  align-items: flex-start;
+}
+}
+@media only screen and (max-width: 768px) {
+
+.airplane{
+  height: 45vh;
+}
+.container{
+height: 120px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+top: -30px;
+}
+ .shahr img{
+    width: 90%;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+}
+@media only screen and (max-width: 768px) {
+
+.airplane{
+ 
+  height: 45vh;
+}
+.container{
+height: 120px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+top: -30px;
+}
+ .shahr img{
+    width: 100%;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+}
 </style>

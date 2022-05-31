@@ -139,6 +139,7 @@ export default {
   border-radius: 8px;
   transition: all 0.6s ease-in-out;
 }
+
 .top-item h3 {
   color: #fff;
   font-size: 40px;
@@ -153,7 +154,8 @@ export default {
   top: -20px;
    text-align: center;
    box-sizing: border-box;
-   padding: 0 10px
+   padding: 0 10px;
+   
 }
 .item-tourist2 {
   width: 100%;
@@ -233,5 +235,30 @@ margin-right: 10px;
 .hover-Tourist:hover .bg-color,
 .hover-Tourist:hover .bg-color2{
 opacity: 0;
+}
+@media only screen and (max-width: 1200px) {
+.top-item p {
+ position: relative;
+  top: -50px;
+ 
+}
+.bg-color{
+  overflow: hidden;
+}
+.bg-color h3,
+.bg-color2 h3{
+font-size: 30px;
+}
+
+.top-item p {
+ position: relative;
+  top: -20px;
+ 
+}
+}
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 768px)  {
 }
 </style>

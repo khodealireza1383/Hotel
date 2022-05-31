@@ -4,6 +4,10 @@
 </template>
 
 <style>
+@font-face {
+  font-family: 'aban';
+  src: url("./assets/font/W_aban.ttf") format("truetype");
+}
 @import url(./assets/css/Button-room1.css);
 body{
 overflow-x: hidden;

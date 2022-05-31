@@ -276,4 +276,27 @@ border-radius: 10px;
   opacity: 0;
   
 }
+@media only screen and (max-width: 1200px) {
+.btn-left{
+  left: 10%;
+}
+.btn-right{
+  right: 4%;
+}
+}
+@media only screen and (max-width: 1024px) {
+.btn-left{
+  left: 23%;
+}
+}
+@media only screen and (max-width: 768px) {
+.btn-left{
+  left: 43%;
+}
+}
+@media only screen and (max-width: 480px) {
+.btn-left{
+  left: 63%;
+}
+}
 </style>

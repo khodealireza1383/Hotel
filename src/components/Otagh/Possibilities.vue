@@ -109,10 +109,14 @@ color: var(--test);
 
   flex-wrap: wrap;
 }
+.item{
+  box-sizing: border-box;
+  padding-right: 20px;
+}
 .item-poss .item ul li {
   width: 300px;
   display: flex;
-  justify-content: center;
+
   align-items: center;
 
 }
@@ -125,5 +129,13 @@ color: var(--test);
   padding-right: 12px;
   padding-top: 10px;
   font-weight: 300;
+}
+@media only screen and (max-width: 480px) {
+.item-poss .item ul li {
+  width: 50%;
+  display: flex;
+  align-items: center;
+
+}
 }
 </style>

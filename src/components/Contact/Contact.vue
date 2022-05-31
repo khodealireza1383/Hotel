@@ -32,13 +32,11 @@ export default {};
   display: flex;
   justify-content: center;
   align-items: center;
-background-image: url('../../assets/img/bg-content4.png');
-box-sizing: border-box;
-padding:30px 0 ;
+  background-image: url("../../assets/img/bg-content4.png");
+  box-sizing: border-box;
 }
 .bg-back {
   width: 60%;
-  height: 75vh;
   background-color: rgba(96, 149, 215, 0.6);
   border-radius: 10px;
   transform: rotate(-4deg);
@@ -49,7 +47,6 @@ padding:30px 0 ;
 
 .bg {
   width: 98%;
-  height: 70vh;
   background-color: rgb(61, 114, 180);
   border-radius: 10px;
   transform: rotate(3deg);
@@ -61,7 +58,7 @@ padding:30px 0 ;
 }
 .bg .img-contact img {
   width: 100%;
-  height: 70vh;
+  height: 73vh;
   border-radius: 10px;
 }
 .input-contact {
@@ -104,5 +101,35 @@ input[type="submit"] {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+@media only screen and (max-width: 1200px) {
+  .contact {
+    height: 80vh;
+  }
+  .bg .img-contact img {
+  height: 50vh;
+}
+}
+@media only screen and (max-width: 768px) {
+
+.contact {
+    height: 70vh;
+  }
+  .bg-back {
+  width: 80%;
+}
+
+.bg {
+  width: 98%;
+}
+  .bg .img-contact img {
+  height: 48vh;
+}
+label{
+  font-size: 1.5rem;
+}
+form input {
+  width: 95%;
+}
 }
 </style>

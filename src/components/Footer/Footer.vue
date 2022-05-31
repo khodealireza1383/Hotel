@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="item">
-        <div class="margin-right">
+        <div class="margin-right1">
           <div class="title">
             <p>دسترسی ها</p>
           </div>
@@ -47,33 +47,46 @@
         </div>
       </div>
       <div class="item">
-        <div class="title2">
-          <p>شبکه های اجتماعی</p>
-        </div>
-        <div class="nav">
-          <div class="nav2">
-            <ul>
-              <li>
-                <a href="#"></a
-                ><img src="../../assets/img/instagram.png" />Instagram
-              </li>
-              <li>
-                <a href="#"></a
-                ><img src="../../assets/img/telegram.png" />Telegram
-              </li>
-              <li>
-                <a href="#"></a
-                ><img src="../../assets/img/youtube.png" />Youtube
-              </li>
-              <li>
-                <a href="#"></a
-                ><img src="../../assets/img/facebook.png" />facebook
-              </li>
-            </ul>
+        <div class="margin-right1 none">
+          <div class="title2">
+            <p>شبکه های اجتماعی</p>
+          </div>
+          <div class="nav">
+            <div class="nav2">
+              <ul>
+                <li>
+                  <a href="#"></a
+                  ><img src="../../assets/img/instagram.png" />Instagram
+                </li>
+                <li>
+                  <a href="#"></a
+                  ><img src="../../assets/img/telegram.png" />Telegram
+                </li>
+                <li>
+                  <a href="#"></a
+                  ><img src="../../assets/img/youtube.png" />Youtube
+                </li>
+                <li>
+                  <a href="#"></a
+                  ><img src="../../assets/img/facebook.png" />facebook
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <!-- respansive mode -->
+      </div>
+      <div class="social-media">
+        <ul>
+          <li><a href="#"></a><img src="../../assets/img/instagram.png" /></li>
+          <li><a href="#"></a><img src="../../assets/img/telegram.png" /></li>
+          <li><a href="#"></a><img src="../../assets/img/youtube.png" /></li>
+          <li><a href="#"></a><img src="../../assets/img/facebook.png" /></li>
+        </ul>
       </div>
     </div>
+    <!-- finish respansive mode -->
+    <!-- malekiat -->
     <div class="malek">
       <p>این وبسایت توسط تیم برنامه نویسی کیهان وب طراحی وساخته شده است</p>
     </div>
@@ -93,11 +106,14 @@ export default {};
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 60px 0 0;
+  padding: 40px 50px 0 0;
 }
 
 .item {
-  width: 22%;
+  box-sizing: border-box;
+  padding-right: 40px;
+  width: 25%;
+  color: #fff;
 }
 .footer-item .question {
   color: rgb(58, 111, 179);
@@ -116,10 +132,9 @@ export default {};
   top: 7px;
   left: 10px;
 }
-.item {
-  color: #fff;
-}
-.title p {
+.title p,
+.title1 p,
+.title2 p {
   font-size: 2rem;
   position: relative;
 }
@@ -142,11 +157,6 @@ export default {};
   position: relative;
   left: 20px;
 }
-
-.title1 p {
-  font-size: 2rem;
-  position: relative;
-}
 .title1 p::before {
   content: "";
   position: absolute;
@@ -155,10 +165,7 @@ export default {};
   width: 70px;
   background-color: #fff;
 }
-.title2 p {
-  font-size: 30px;
-  position: relative;
-}
+
 .title2 p::before {
   content: "";
   position: absolute;
@@ -171,7 +178,7 @@ export default {};
 .top-item {
   padding-bottom: 70px;
 }
-.margin-right {
+.margin-right1 {
   padding-right: 30px;
 }
 .nav2 ul {
@@ -190,5 +197,105 @@ export default {};
 .logo {
   position: relative;
   top: 30px;
+}
+.social-media ul {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .footer-item {
+    padding: 40px 40px 0 0;
+  }
+  .question h3 {
+    width: 350px;
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .footer-item {
+    padding: 40px 0px 0 0;
+  }
+  .question h3 {
+    width: 350px;
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  * {
+    margin: 0;
+  }
+  .none {
+    display: none;
+  }
+  .item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-right: 0;
+  }
+  .logo,
+  .question,
+  .aboutme {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .question {
+    width: 100%;
+    position: relative;
+    top: 30px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .aboutme {
+    width: 85%;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .malek {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  .margin-right1 {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .nav1 {
+    position: relative;
+    left: 0;
+  }
+  .nav li {
+    font-size: 1.1rem;
+  }
+  .social-media {
+    width: 100%;
+  }
+  .social-media ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-media ul img {
+    width: 50px;
+  }
+  .title1{
+    margin-right: 20px;
+  }
 }
 </style>

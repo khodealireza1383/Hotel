@@ -4,7 +4,7 @@
       <div class="indicator">
         <li @click.prevent="count = 'four'" :class="{ show: count === 'four' }">
           <a href="#">
-  <img src="../../assets/img/four.png" alt="">
+            <img src="../../assets/img/four.png" alt="" />
           </a>
         </li>
         <li
@@ -12,23 +12,21 @@
           :class="{ show: count === 'three' }"
         >
           <a href="#">
-       <img src="../../assets/img/three.png" alt="">
+            <img src="../../assets/img/three.png" alt="" />
           </a>
         </li>
         <li @click.prevent="count = 'two'" :class="{ show: count === 'two' }">
           <a href="#">
-        <img src="../../assets/img/two.png" alt="" class="im1">
+            <img src="../../assets/img/two.png" alt="" class="im1" />
           </a>
         </li>
         <li @click.prevent="count = 'one'" :class="{ show: count === 'one' }">
           <a href="#">
-         <img src="../../assets/img/one.png" alt="" class="im1">
+            <img src="../../assets/img/one.png" alt="" class="im1" />
           </a>
         </li>
         <div class="circle">
-          <span class="material-icons">
-keyboard_double_arrow_up
-</span>
+          <span class="material-icons"> keyboard_double_arrow_up </span>
         </div>
       </div>
     </ul>
@@ -48,9 +46,10 @@ keyboard_double_arrow_up
       </div>
     </div>
     <!-- --------------------- Our single room --------------- -->
-    <div class="room"
-    v-if="count == 'one'"
-          :class="{ display: count === 'one' }"
+    <div
+      class="room"
+      v-if="count == 'one'"
+      :class="{ display: count === 'one' }"
     >
       <div class="item-room" v-for="oneGuest in oneGuests" :key="oneGuest.id">
         <div class="widthHover"></div>
@@ -80,9 +79,11 @@ keyboard_double_arrow_up
       </div>
     </div>
     <!-- -----------------Our double room-------------- -->
-    <div class="room room2"
-       v-if="count == 'two'"
-          :class="{ display: count === 'two' }">
+    <div
+      class="room room2"
+      v-if="count == 'two'"
+      :class="{ display: count === 'two' }"
+    >
       <div class="item-room" v-for="twoGuest in twoGuests" :key="twoGuest.id">
         <div class="widthHover"></div>
         <div class="img-room">
@@ -111,10 +112,16 @@ keyboard_double_arrow_up
       </div>
     </div>
     <!-- --------------- Our triple room -------------- -->
-    <div class="room room2"
-       v-if="count == 'three'"
-          :class="{ display: count === 'three' }">
-      <div class="item-room" v-for="threeGuest in threeGuests" :key="threeGuest.id">
+    <div
+      class="room room2"
+      v-if="count == 'three'"
+      :class="{ display: count === 'three' }"
+    >
+      <div
+        class="item-room"
+        v-for="threeGuest in threeGuests"
+        :key="threeGuest.id"
+      >
         <div class="widthHover"></div>
         <div class="img-room">
           <img :src="threeGuest.imgRoom" alt="" />
@@ -142,10 +149,16 @@ keyboard_double_arrow_up
       </div>
     </div>
     <!-- ------------- Our four-person room ------------- -->
-    <div class="room room2"
-       v-if="count == 'four'"
-          :class="{ display: count === 'four' }">
-      <div class="item-room" v-for="fourGuest in fourGuests" :key="fourGuest.id">
+    <div
+      class="room room2"
+      v-if="count == 'four'"
+      :class="{ display: count === 'four' }"
+    >
+      <div
+        class="item-room"
+        v-for="fourGuest in fourGuests"
+        :key="fourGuest.id"
+      >
         <div class="widthHover"></div>
         <div class="img-room">
           <img :src="fourGuest.imgRoom" alt="" />
@@ -166,9 +179,7 @@ keyboard_double_arrow_up
           <span>{{ fourGuest.price }}</span>
         </div>
         <div class="button-rezerv">
-          <button class="button">
-            رزرو اتاق <span class="material-icons"> shopping_cart </span>
-          </button>
+          <button class="button">رزرو اتاق <span class="material-icons"> shopping_cart </span></button>
         </div>
       </div>
     </div>
@@ -203,8 +214,8 @@ export default {
         },
         {
           imgRoom: require("../../assets/img/more-room3.jpg"),
-          nameR: "سوییت یه نفره  معمولی جزیره",
-          price: "1.000.000 تومان",
+          nameR: "سوییت یه نفره جزیره",
+          price: "2.300.000 تومان",
         },
       ],
       twoGuests: [
@@ -234,7 +245,7 @@ export default {
           price: "2.000.000 تومان",
         },
       ],
-       threeGuests: [
+      threeGuests: [
         {
           imgRoom: require("../../assets/img/more-room3.jpg"),
           nameR: "سوییت ساحلی سه نفره",
@@ -261,7 +272,7 @@ export default {
           price: "3.000.000 تومان",
         },
       ],
-       fourGuests: [
+      fourGuests: [
         {
           imgRoom: require("../../assets/img/more-room3.jpg"),
           nameR: "سوییت ساحلی چهار نفره",
@@ -303,18 +314,16 @@ export default {
   position: relative;
   margin-top: 50px;
 }
-
 .indicator {
   width: 500px;
   height: 100px;
-  background-color:var(--test);
+  background-color: var(--test);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   border-radius: 20px;
 }
-
 .indicator li a {
   display: flex;
   justify-content: center;
@@ -324,9 +333,9 @@ export default {
 }
 
 .indicator li a img {
- width: 100px;
+  width: 100px;
 }
-.im1{
+.im1 {
   box-sizing: border-box;
   padding-bottom: 20px;
 }
@@ -343,45 +352,22 @@ export default {
   height: 35px;
   width: 35px;
   background: #fff;
-border-radius: 45%;
-text-align: center;
-color: var(--test);
+  border-radius: 45%;
+  text-align: center;
+  color: var(--test);
   transition: all 0.2s ease-in;
 }
-
-/* .circle::before {
-  content: "";
-  position: absolute;
-  left: -15px;
-  bottom: 0%;
-  height: 22px;
-  width: 20px;
-  box-shadow: 0 10px 0 #fff;
-}
-
-.circle::after {
-  content: "";
-  position: absolute;
-  right: -15px;
-  bottom: 0%;
-  height: 22px;
-  width: 20px;
-
-  box-shadow: 0 10px 0 #fff;
-} */
-
 li:nth-child(1).show ~ .circle {
-left: calc(500px - 80px);
-
+  left: calc(500px - 80px);
 }
 
 li:nth-child(2).show ~ .circle {
-left: calc(500px - 210px);
+  left: calc(500px - 210px);
   transition: all 0.2s ease-in;
 }
 
 li:nth-child(3).show ~ .circle {
-left: calc(500px - 330px);
+  left: calc(500px - 330px);
   transition: all 0.2s ease-in;
 }
 
@@ -444,7 +430,7 @@ li:nth-child(4).show ~ .circle {
   flex-direction: column;
   margin-top: 20px;
 }
-.room2{
+.room2 {
   display: none;
 }
 .item-room {
@@ -513,7 +499,153 @@ li:nth-child(4).show ~ .circle {
   top: -20px;
   font-weight: 600;
 }
-.display{
-  display:flex
+.display {
+  display: flex;
+}
+@media only screen and (max-width: 1200px) {
+  .item-room {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .img-room img {
+    width: 140px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .price span {
+    color: var(--test);
+    font-size: 23px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .item-room > * {
+    margin-right: 10px;
+  }
+  .img-room img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+  }
+  .item-room {
+    padding: 10px 5px;
+  }
+  .name-room p {
+    font-size: 15px;
+    color: rgb(65, 65, 67);
+    font-weight: 300;
+  }
+  .button-rezerv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar {
+    margin-right: 15px;
+  }
+  .indicator {
+    width: 87%;
+    height: 100px;
+    box-sizing: border-box;
+    padding-right: 30px;
+    border-radius: 10px;
+  }
+  li:nth-child(1).show ~ .circle {
+    left: calc(500px - 125px);
+  }
+
+  li:nth-child(2).show ~ .circle {
+    left: calc(500px - 250px);
+    transition: all 0.2s ease-in;
+  }
+
+  li:nth-child(3).show ~ .circle {
+    left: calc(500px - 370px);
+    transition: all 0.2s ease-in;
+  }
+
+  li:nth-child(4).show ~ .circle {
+    transform: translateX(-40px);
+    transition: all 0.2s ease-in;
+  }
+  .item-room {
+  flex-direction: column;
+ 
+}
+.item-room:hover{
+box-shadow: 0px 0px 10px var(--test);
+background: linear-gradient(to right, rgb(58, 111, 179), var(--test));
+  transform: scale(0.93);
+
+}
+.item-room:hover .name-room p,
+.item-room:hover .price p{
+  color: #fff;
+  
+}
+.item-room:hover .price span{
+  color: #fff;
+}
+.done-false{
+  display: none;
+}
+.img-room img {
+  width: 270px;
+  height: 150px;
+  border-radius: 10px;
+}
+.Capacity{
+  display: none;
+}
+.name-room p {
+  font-size:1.5rem;
+}
+.name-room{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction:column ;
+}
+.name-room span {
+padding: 7px;
+}
+.button-rezerv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.button{
+  width: 130px;
+  height: 50px;
+  font-size:0.8rem;
+  border: none;
+}
+.container-room .box-room {
+display: none;
+}
+.title-room{
+  height: 100px;
+}
+.widthHover{
+opacity: 0;
+}
 }
 </style>

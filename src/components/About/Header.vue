@@ -1,16 +1,16 @@
 <template>
   <div class="header">
     <div class="bg-color">
-      <div class="navbar" ref="bg">
+      <div class="navbar" ref="bg2">
         <div class="logo">
           <img src="../../assets/img/logo(2).png" alt="" />
         </div>
         <div class="nav">
-          <ul>
+          <ul ref="ShowNavi">
             <li><router-link to="/" class="link">صفحه اصلی </router-link></li>
             <li><router-link to="/room" class="link">اتاق ها </router-link></li>
             <li><router-link to="/blog" class="link"> وبلاگ </router-link></li>
-            <li class="active">
+            <li>
               <router-link to="/" class="link"> درباره ما </router-link>
             </li>
             <li><router-link to="/contact" class="link">تماس با ما </router-link></li>
@@ -19,6 +19,10 @@
         <div class="button-login">
           <button>ورود و ثبت نام</button>
           <p>0513-2677321</p>
+        </div>
+                <div class="menu-respansive">
+          <span class="material-icons"> person </span>
+          <span class="material-icons" @click="ShowNav"> menu </span>
         </div>
       </div>
     </div>
@@ -32,15 +36,20 @@ export default {
       windowTop: 0,
     };
   },
+        methods: {
+    ShowNav() {
+      this.$refs.ShowNavi.classList.toggle("shownav");
+    },
+  },
   mounted(){
     var that=this;
     window.addEventListener('scroll', function(){
       that.windowTop=window.pageYOffset;
       console.log(that.windowTop)
       if(that.windowTop >300){
-        that.$refs.bg.classList.add('bg-nav')
+        that.$refs.bg2.classList.add('bg-nav')
       }else{
-           that.$refs.bg.classList.remove('bg-nav')
+           that.$refs.bg2.classList.remove('bg-nav')
       }
     })
   }
@@ -160,4 +169,92 @@ justify-content: center;
   height: 3px;
   background-color: #fff;
 }
+@media only screen and (max-width: 1200px) {
+  .header {
+  width: 100%;
+  height: 55vh;
+
+}
+.nav {
+  width: 90%;
+  text-align: left;
+}
+}
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 768px) {
+.header{
+    height: 47vh;
+  }
+/* respansive */
+.nav {
+    width: 50%;
+    height: 605px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: -30px;
+  }
+
+  .nav ul {
+    background: linear-gradient(to right, rgb(58, 111, 179), var(--test));
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 400px;
+    border-radius: 10px;
+    margin-right: 150%;
+    transition: all 0.4s ease-in;
+    position: relative;
+  }
+  .nav ul::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: rgb(58, 111, 179);
+    position: absolute;
+    top: -4px;
+    left: 56px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  .nav ul.shownav {
+    margin-right: 40%;
+  }
+
+  .nav ul li {
+    margin-top: 15px;
+    position: relative;
+    left: 20px;
+  }
+
+
+  .logo {
+    width: 50%;
+    cursor: pointer;
+  }
+  .menu-respansive {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    color: #fff;
+    z-index: 10;
+  }
+  .menu-respansive span {
+    font-size: 2rem;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+.navbar.bg-nav .button-login {
+display: none;
+}
+  .button-login {
+    display: none;
+  }
+}
+ 
 </style>

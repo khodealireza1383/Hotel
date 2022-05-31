@@ -18,9 +18,7 @@
                 طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن
                 صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده
                 می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و
-                ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از
-                متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا
-                صاحب کار خود نشان دهند
+                ظاهر متن باشد.
               </p>
             </div>
             <div class="nazarat">
@@ -38,13 +36,13 @@
           </div>
         </div>
         <div class="img-room">
-          <img src="../HomePage/hotel.jpg" alt="" />
+          <img src="../../assets/img/hotel.jpg" alt="" />
           <div class="bg-img"></div>
         </div>
       </div>
     </div>
     <!-- two blog -->
-<div class="content-slider">
+    <div class="content-slider">
       <div class="item-right">
         <div class="detaile-room">
           <div class="title-room">
@@ -58,9 +56,7 @@
                 طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن
                 صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده
                 می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و
-                ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از
-                متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا
-                صاحب کار خود نشان دهند
+                ظاهر متن باشد.
               </p>
             </div>
             <div class="nazarat">
@@ -78,13 +74,13 @@
           </div>
         </div>
         <div class="img-room">
-          <img src="../HomePage/hotel.jpg" alt="" />
+          <img src="../../assets/img/hotel.jpg" alt="" />
           <div class="bg-img"></div>
         </div>
       </div>
+      </div>
     </div>
 
-  </div>
 </template>
 
 <script>
@@ -123,7 +119,7 @@ export default {};
   width: 70%;
   height: 100%;
   border-radius: 15px;
-  background-color: var(--test);
+  background: linear-gradient(to right, rgb(58, 111, 179), var(--test));
 }
 .mtn-room p {
   width: 80%;
@@ -134,7 +130,7 @@ export default {};
   align-items: center;
 }
 .nazarat {
-  width: 60%;
+  width: 40%;
 }
 .title-room span {
   color: white;
@@ -158,7 +154,7 @@ export default {};
   background-color: #fff;
   border-radius: 7px;
   position: relative;
-  top: 25px;
+  top: 45px;
   left: 15px;
 }
 .btn-rezerv button {
@@ -173,7 +169,7 @@ export default {};
 .star {
   position: relative;
   left: 10px;
-  top: 25px;
+  top: 45px;
   color: white;
 }
 .img-room {
@@ -191,7 +187,6 @@ export default {};
   width: 250px;
   height: 230px;
   border-radius: 15px;
-  
 }
 .bg-img {
   width: 250px;
@@ -208,4 +203,88 @@ export default {};
   transition: all 0.3s ease-in-out;
 }
 
+@media only screen and (max-width: 1200px) {
+  .title-blog {
+    height: 150px;
+  }
+
+  .mtn-room p {
+    width: 90%;
+  }
+  .title-room span {
+    position: relative;
+    top: 0;
+  }
+  .btn-rezerv,
+  .star {
+    top: 30px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 768px) {
+.img-room{
+  display: none;
+}
+.item-right .detaile-room {
+  width: 100%;
+
+
+
+}
+}
+@media only screen and (max-width: 480px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .title-blog {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  
+}
+.title-blog h2 {
+  font-size: 2.4rem;
+}
+.item-right {
+  width: 90%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+flex-direction: column;
+  margin-top: 20px;
+}
+
+.item-right .detaile-room {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(to right, rgb(58, 111, 179), var(--test));
+
+}
+.content-room{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+.nazarat{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.btn-rezerv,
+.star{
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left:20px ;
+}
+
+}
 </style>

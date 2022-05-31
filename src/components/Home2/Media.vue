@@ -25,9 +25,15 @@
             <span class="material-icons"> arrow_back_ios </span>
           </div>
           <div class="social-more">
-              <div class="item-social"><img src="../../assets/img/youtube.png" /></div>
-              <div class="item-social"><img src="../../assets/img/telegram.png" /></div>
-              <div class="item-social"><img src="../../assets/img/facebook.png" /></div>
+            <div class="item-social">
+              <img src="../../assets/img/youtube.png" />
+            </div>
+            <div class="item-social">
+              <img src="../../assets/img/telegram.png" />
+            </div>
+            <div class="item-social">
+              <img src="../../assets/img/facebook.png" />
+            </div>
           </div>
         </div>
       </div>
@@ -61,7 +67,6 @@ export default {};
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   border-radius: 10px;
 }
 .right-box {
@@ -120,14 +125,13 @@ export default {};
   flex-direction: column;
 }
 .img-app img {
-  width: 70%;
+  width: 85%;
   box-sizing: border-box;
   padding-top: 40px;
-    transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
-.img-app img:hover{
- transform: scale(1.1);
-
+.img-app img:hover {
+  transform: scale(1.1);
 }
 .social {
   width: 60%;
@@ -161,28 +165,84 @@ export default {};
 .social-instagram img {
   width: 30px;
 }
-.social-instagram span{
-    color: #fff;
+.social-instagram span {
+  color: #fff;
 }
 .social-more {
-    width: 80%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-sizing: border-box;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
 }
-.social-more img{
-width: 30px;
+.social-more img {
+  width: 30px;
 }
-.item-social{
-   display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 65px;
-    height: 65px;
+.item-social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 65px;
+  height: 65px;
   background: linear-gradient(to right, rgb(58, 111, 179), var(--test));
+  border-radius: 50%;
+}
+@media only screen and (max-width: 1200px) {
+  .Media {
+    height: 50vh;
+  }
+  .social {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .right-box .News {
+    width: 70%;
+    margin-left: 60px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .right-box {
+    width: 50%;
+    margin-right: 70px;
+  }
+  .right-box .News {
+    width: 100%;
+    height: 380px;
+    margin: 10px 0;
+  }
+  .img-app {
+    width: 50%;
+  }
+  .img-app img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .Media {
+  width: 100%;
+  height: 100vh;
 
-    border-radius: 50%;
+}
+  .Container {
+  width: 100%;
+flex-direction: column;
+}
+.img-app {
+  width: 90%;
+  flex-direction: column;
+}
+.img-app img{
+  width: 100%;
+}
+.right-box{
+  width: 100%;
+  height: 400px;
+margin: 0 auto;
+}
+.right-box .News {
+  width: 90%;
+}
 }
 </style>

@@ -37,7 +37,7 @@
         <h3>تیم فرانت اند</h3>
         <div class="bg"></div>
       </div>
-      <div class="box-img">
+      <div class="box-img none">
         <img src="../../assets/img/team5.webp" alt="" class="team-img1" />
         <h3>تیم فرانت اند</h3>
         <div class="bg"></div>
@@ -54,12 +54,12 @@
         <h3>تیم فرانت اند</h3>
         <div class="bg"></div>
       </div>
-      <div class="box-img">
+      <div class="box-img ">
         <img src="../../assets/img/team6.webp" alt="" class="team-img1" />
         <h3>تیم فرانت اند</h3>
         <div class="bg"></div>
       </div>
-      <div class="box-img">
+      <div class="box-img none">
         <img src="../../assets/img/team8.webp" alt="" class="team-img1" />
         <h3>تیم فرانت اند</h3>
         <div class="bg"></div>
@@ -155,8 +155,7 @@ export default {};
   color: #fff;
   opacity: 0;
   transition: all 0.4s linear;
-    z-index: 12;
-
+  z-index: 12;
 }
 .bg {
   width: 100%;
@@ -192,5 +191,66 @@ export default {};
 .padding {
   box-sizing: border-box;
   padding: 0px 90px;
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .text-About p {
+    width: 95%;
+    margin-top: -60px;
+  }
+  .container .img-About {
+    width: 60%;
+  }
+  .padding {
+    box-sizing: border-box;
+    padding: 0px 30px;
+  }
+  .title-team {
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .text-About h2 {
+  font-weight: 400;
+  font-size: 2.7rem;
+  padding: 0 10px;
+}
+  .text-About p {
+    width: 90%;
+    font-size: 1.1rem;
+    margin-top: -30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+.img-About{
+  width: 60%;
+}
+.container .img-About img {
+  width: 100%;
+  border-radius: 15px;
+  height: 400px;
+}
+.img-top {
+  flex-wrap: wrap;
+}
+.img-bottom {
+  flex-wrap: wrap;
+position: relative;
+top: -5px;
+}
+.box-img {
+  width: 32%;
+  height: 450px;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.4s linear;
+}
+.none{
+  display: none;
+}
 }
 </style>
