@@ -7,7 +7,7 @@
         </div>
         <div class="nav">
           <ul ref="ShowNavi">
-            <li class="active">
+            <li>
               <router-link to="/" class="link">صفحه اصلی </router-link>
             </li>
             <li><router-link to="/room" class="link">اتاق ها </router-link></li>
@@ -107,12 +107,13 @@ export default {
 .nav ul .link {
   color: #fff;
   text-decoration: none;
-  font-size: 27px;
+  font-size: 21px;
+  font-weight: 500px;
   transition: all 0.4s ease-in-out;
 }
 .nav ul .link:hover {
   text-decoration: none;
-  font-size: 31px;
+  font-size: 24px;
 }
 .menu-respansive {
   display: none;
@@ -133,17 +134,17 @@ export default {
   border-radius: 7px;
   border-top: 2px solid rgb(32, 68, 188);
   border-left: 2px solid rgb(32, 68, 188);
-  font-size: 17px;
+  font-size: 14px;
   cursor: pointer;
   position: absolute;
   left: 50px;
 }
 .button-login p {
   color: #fff;
-  font-size: 24px;
+  font-size: 19px;
   position: absolute;
-  left: 40px;
-  top: 60px;
+  left: 45px;
+  top: 62px;
 }
 /* search */
 .search {
@@ -152,7 +153,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 50vh;
+  height: 45vh;
 }
 .search .bg-search {
   width: 55%;
@@ -181,10 +182,10 @@ export default {
   cursor: pointer;
 }
 .taghvim img {
-  width: 55px;
+  width: 45px;
 }
 .number-person img {
-  width: 55px;
+  width: 45px;
   margin-right: 30px;
 }
 .taghvim input,
@@ -210,17 +211,17 @@ export default {
   border-radius: 7px;
   border-top: 2px solid rgb(32, 68, 188);
   border-left: 2px solid rgb(32, 68, 188);
-  font-size: 1.3em;
+  font-size: 1.1em;
   cursor: pointer;
 }
 .taghvim p,
 .number-person p {
   position: absolute;
-  top: 10%;
+  top: 12%;
   width: 100%;
   color: rgb(77, 111, 156);
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .taghvim p {
   right: 25%;
@@ -238,7 +239,7 @@ export default {
   left: 10px;
 }
 .number-person span {
-  left: 30%;
+  left: 32%;
 }
 @media only screen and (max-width: 1200px) {
   .nav {
@@ -252,13 +253,15 @@ export default {
 }
 @media only screen and (max-width: 1024px) {
   .header {
-    height: 55vh;
+    height: 67vh;
   }
   .search {
     height: 35vh;
   }
   .nav {
-    width: 100%;
+    width: 90%;
+margin-right: 30px;
+font-size: 18px;
   }
   .number-person input {
     width: 50%;
@@ -280,7 +283,7 @@ export default {
     width: 230px;
   }
   .taghvim p {
-    right: 27%;
+    right: 25%;
   }
   .taghvim span {
     left: -2px;
@@ -408,17 +411,15 @@ export default {
 }
 @media only screen and (max-width: 480px) {
   /* nav */
-  .header{
-    width: 100%;
-    height: 49vh;
-    position: relative;
+  .header {
+    height: 71vh
   }
   .navbar {
-  height: 120px;
-}
-    .nav {
-    width:900px;
-    height:560px;
+    height: 120px;
+  }
+  .nav {
+    width: 900px;
+    height: 560px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -432,8 +433,8 @@ export default {
     width: 100%;
     height: 100%;
     margin-right: 150%;
-    padding:40px 60px;
- }
+    padding: 40px 60px;
+  }
   .nav ul::before {
     content: "";
     width: 20px;
@@ -452,7 +453,7 @@ export default {
     display: none;
   }
   .logo {
-    width:80%;
+    width: 80%;
     cursor: pointer;
   }
   .menu-respansive {
@@ -468,7 +469,11 @@ export default {
     cursor: pointer;
   }
   /* search */
-   .search .bg-search {
+    .search{
+        height: 40vh;
+
+    }
+  .search .bg-search {
     width: 80%;
     height: 300px;
     flex-direction: column;

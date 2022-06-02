@@ -61,7 +61,7 @@ export default {
 <style scoped>
 .header {
   width: 100%;
-  height: 60vh;
+  height: 65vh;
   background-image: url("../../assets/img/contact-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -116,13 +116,13 @@ export default {
 .nav ul .link {
   color: #fff;
   text-decoration: none;
-  font-size: 27px;
+  font-size: 21px;
   transition: all 0.4s ease-in-out;
 }
 .nav ul .link:hover {
-  color: var(--test);
+
   text-decoration: none;
-  font-size: 28px;
+  font-size: 24px;
 }
 .button-login {
   width: 40%;
@@ -140,37 +140,17 @@ export default {
   border-radius: 7px;
   border-top: 2px solid rgb(32, 68, 188);
   border-left: 2px solid rgb(32, 68, 188);
-  font-size: 17px;
+  font-size: 14px;
   cursor: pointer;
   position: absolute;
   left: 50px;
 }
 .button-login p {
   color: #fff;
-  font-size: 24px;
+  font-size: 19px;
   position: absolute;
-  left: 40px;
-  top: 60px;
-}
-.active {
-  position: relative;
-}
-.active::before {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  width: 80px;
-  height: 3px;
-  background-color: #fff;
-}
-.active::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  right: 2px;
-  width: 60px;
-  height: 3px;
-  background-color: #fff;
+  left: 45px;
+  top: 62px;
 }
 @media only screen and (max-width: 1200px) {
   .header {

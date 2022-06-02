@@ -5,8 +5,11 @@
 
 <style>
 @font-face {
-  font-family: 'aban';
-  src: url("./assets/font/W_aban.ttf") format("truetype");
+font-family: "iran-sans";
+  src: url("./assets/font/iransans/iran-sans-500.eot") format("eot"),
+    url("./assets/font/iransans/iran-sans-500.ttf") format("truetype"),
+    url("./assets/font/iransans//iran-sans-500.woff") format("woff"),
+    url("./assets/font/iransans/iran-sans-500.woff2") format("woff2");
 }
 @import url(./assets/css/Button-room1.css);
 body{
@@ -14,7 +17,7 @@ overflow-x: hidden;
 margin: 0;
 padding: 0;
 direction:rtl ;
-font-family: "aban";
+font-family: "iran-sans";
 box-sizing: border-box;
 }
 
@@ -25,17 +28,12 @@ box-sizing: border-box;
 
 
 *{
-  font-family: "aban";
+  font-family: "iran-sans";
 }
 
 
 li{
   list-style: none;
-}
-
-
-a{
-text-decoration: none;
 }
 
 

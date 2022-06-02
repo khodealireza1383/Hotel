@@ -2,7 +2,7 @@
   <div class="box-blog">
 <div class="bg-blog">
 <div class="title-blog">
-<p>گردشگری مشهد</p>
+<h2>گردشگری مشهد</h2>
 </div>
 <div class="cont-blog">
 <div class="slider">
@@ -138,35 +138,31 @@ padding: 0;
 overflow-x: hidden;
 }
 .box-blog{
+  height:90vh;
 display: flex;
 justify-content: flex-start;
 align-items: flex-end;
 flex-direction: column;
-height:70vh;
-
-
 }
 .bg-blog{
 width: 100%;
 height: 650px;
 background-color: var(--test);
 }
-.title-blog p{
+.title-blog h2{
 text-align: center;
-font-size: 44px;
+font-size: 2.2rem;
 color: white;
-position: relative;
-top: 0px  ;
+
 }
 .slider {
-  width: 1300px;
+  width: 80%;
   height: 700px;
   margin: 100px auto 0;
   overflow: hidden;
   position: relative;
   top: -70px;
   left: 14px;
-
 }
 .container-slide {
   display: flex;
@@ -236,7 +232,7 @@ transition: all 0.5s ease-in-out;
 
 .bg-color .title {
   color: rgb(36, 76, 128);
-  font-size: 44px;
+  font-size: 2.2rem;
   position: absolute;
   top: 0;
   right: 10px;
@@ -246,18 +242,22 @@ transition: all 0.5s ease-in-out;
   margin-right: 35px;
 }
 .loc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   position: absolute;
   bottom: 10px;
   color: white;
-  font-size: 22px;
+  font-size: 17px;
   font-weight: bold;
     transition: all 0.8s ease-in-out;
+
 }
 .loc span {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: relative;
-  top: 10px;
+  top: 5px;
 }
 .item-city:hover{
 transform: scale(1.1);
@@ -278,7 +278,7 @@ border-radius: 10px;
 }
 @media only screen and (max-width: 1200px) {
 .btn-left{
-  left: 10%;
+  left: 2%;
 }
 .btn-right{
   right: 4%;
@@ -286,17 +286,17 @@ border-radius: 10px;
 }
 @media only screen and (max-width: 1024px) {
 .btn-left{
-  left: 23%;
+  left: 3%;
 }
 }
 @media only screen and (max-width: 768px) {
 .btn-left{
-  left: 43%;
+  left: 1%;
 }
 }
 @media only screen and (max-width: 480px) {
 .btn-left{
-  left: 63%;
+  left: 1%;
 }
 }
 </style>

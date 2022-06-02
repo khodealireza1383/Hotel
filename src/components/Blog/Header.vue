@@ -62,7 +62,7 @@ export default {
 .header {
   width: 100%;
   height: 65vh;
-  background-image: url(../../assets/img/bg-blog.jpg);
+  background-image: url("../../assets/img/bg-blog.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,7 +75,6 @@ export default {
   align-items: center;
   position: fixed;
   top: 0;
-  right: 0;
   transition: all 0.5s ease-in-out;
   z-index: 10;
 }
@@ -96,6 +95,9 @@ export default {
   width: 100%;
   height: 100%;
 }
+.menu-respansive{
+  display: none;
+}
 .logo {
   width: 30%;
   display: flex;
@@ -115,12 +117,13 @@ export default {
 .nav ul .link {
   color: #fff;
   text-decoration: none;
-  font-size: 27px;
+  font-size: 21px;
   transition: all 0.4s ease-in-out;
 }
 .nav ul .link:hover {
+
   text-decoration: none;
-  font-size: 31px;
+  font-size: 24px;
 }
 .button-login {
   width: 40%;
@@ -138,17 +141,17 @@ export default {
   border-radius: 7px;
   border-top: 2px solid rgb(32, 68, 188);
   border-left: 2px solid rgb(32, 68, 188);
-  font-size: 17px;
+  font-size: 14px;
   cursor: pointer;
   position: absolute;
   left: 50px;
 }
 .button-login p {
   color: #fff;
-  font-size: 24px;
+  font-size: 19px;
   position: absolute;
-  left: 40px;
-  top: 60px;
+  left: 45px;
+  top: 62px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -163,7 +166,7 @@ export default {
 }
 @media only screen and (max-width: 768px) {
   .header {
-    height: 47vh;
+    height: 67vh;
   }
   /* respansive */
   .nav {

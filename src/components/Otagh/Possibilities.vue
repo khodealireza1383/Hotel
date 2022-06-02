@@ -5,10 +5,6 @@
         <span class="material-icons"> assignment_turned_in </span>
         <h2>امکانات اتاق های کیهان وب</h2>
       </div>
-      <div class="About-poss">
-        <span class="material-icons"> done </span>
-        <p>امکانات زیر در اتاق موجود می باشد</p>
-      </div>
       <div class="item-poss">
         <div class="item">
           <ul>
@@ -72,34 +68,16 @@ export default {
 }
 .title-poss span {
   color: var(--test);
-  font-size: 55px;
+  font-size: 45px;
 }
 .title-poss h2 {
   color: var(--test);
-  font-size: 27px;
+  font-size: 24px;
   padding-right: 12px;
   padding-top: 10px;
   font-weight: 300;
 }
-.About-poss {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  padding-right: 60px;
-}
-.About-poss span {
-color: var(--test);
-  font-size: 40px;
-}
-.About-poss p {
- 
-  font-size: 22px;
-  padding-right: 12px;
-  padding-top: 10px;
-  font-weight: 300;
-}
+
 .item-poss {
   width: 100%;
 }
@@ -125,7 +103,7 @@ color: var(--test);
     color: var(--test);
 }
 .item-poss .item ul li p{
-  font-size: 22px;
+  font-size: 19px;
   padding-right: 12px;
   padding-top: 10px;
   font-weight: 300;

@@ -78,9 +78,8 @@
           <div class="bg-img"></div>
         </div>
       </div>
-      </div>
     </div>
-
+  </div>
 </template>
 
 <script>
@@ -96,7 +95,7 @@ export default {};
   align-items: center;
 }
 .title-blog h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
   color: rgb(58, 111, 179);
   text-shadow: 3px 0px 1px rgb(139, 185, 245);
@@ -121,9 +120,6 @@ export default {};
   border-radius: 15px;
   background: linear-gradient(to right, rgb(58, 111, 179), var(--test));
 }
-.mtn-room p {
-  width: 80%;
-}
 .content-room {
   display: flex;
   justify-content: space-around;
@@ -134,13 +130,16 @@ export default {};
 }
 .title-room span {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-right: 25px;
   position: relative;
   top: 10px;
 }
 .mtn-room p {
+  width: 80%;
+  font-size: 15px;
   color: #fff;
+  padding-top: 20px;
   padding-right: 23px;
   text-align: justify;
   text-justify: inter-word;
@@ -154,22 +153,22 @@ export default {};
   background-color: #fff;
   border-radius: 7px;
   position: relative;
-  top: 45px;
+  top: 25px;
   left: 15px;
 }
 .btn-rezerv button {
   border: none;
   background-color: rgb(58, 111, 179);
   width: 120px;
-  color: white;
+  color: #fff;
   height: 40px;
   border-radius: 5px;
-  font-size: 25px;
+  font-size: 21px;
 }
 .star {
   position: relative;
   left: 10px;
-  top: 45px;
+  top: 25px;
   color: white;
 }
 .img-room {
@@ -204,16 +203,16 @@ export default {};
 }
 
 @media only screen and (max-width: 1200px) {
+
   .title-blog {
     height: 150px;
   }
-
   .mtn-room p {
     width: 90%;
   }
   .title-room span {
     position: relative;
-    top: 0;
+    top: 10px;
   }
   .btn-rezerv,
   .star {
@@ -221,70 +220,65 @@ export default {};
   }
 }
 @media only screen and (max-width: 1024px) {
-
+    .mtn-room p {
+margin-top: -10px;
+  }
 }
 @media only screen and (max-width: 768px) {
-.img-room{
-  display: none;
-}
-.item-right .detaile-room {
-  width: 100%;
-
-
-
-}
+  .img-room {
+    display: none;
+  }
+  .item-right .detaile-room {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 480px) {
-  *{
+  * {
     margin: 0;
     padding: 0;
   }
   .title-blog {
-  width: 100%;
-  height: 140px;
-  display: flex;
-  justify-content: center;
-  align-items:center ;
-  
-}
-.title-blog h2 {
-  font-size: 2.4rem;
-}
-.item-right {
-  width: 90%;
-  height: 320px;
-  display: flex;
-  justify-content: center;
-flex-direction: column;
-  margin-top: 20px;
-}
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-blog h2 {
+    font-size: 2.4rem;
+  }
+  .item-right {
+    width: 90%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 
-.item-right .detaile-room {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  background: linear-gradient(to right, rgb(58, 111, 179), var(--test));
-
-}
-.content-room{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
- 
-}
-.nazarat{
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-}
-.btn-rezerv,
-.star{
-  position: relative;
-  top: 0;
-  left: 0;
-  margin-left:20px ;
-}
-
+  .item-right .detaile-room {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: linear-gradient(to right, rgb(58, 111, 179), var(--test));
+  }
+  .content-room {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .nazarat {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .btn-rezerv,
+  .star {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+  }
 }
 </style>

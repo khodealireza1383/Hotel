@@ -85,24 +85,20 @@ export default {};
 .text-About {
   width: 50%;
 }
-.text-About h3 {
-  font-weight: 400;
-  font-size: 1.4rem;
-  color: var(--test);
-  position: relative;
-  top: 45px;
-}
 .text-About h2 {
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 2.7rem;
+  color: var(--test);
+
 }
+
 .text-About p {
   width: 80%;
   text-align: justify;
   text-justify: inter-word;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: rgb(78, 93, 112);
-  margin-top: -30px;
+
 }
 .container .img-About {
   width: 50%;
@@ -123,7 +119,7 @@ export default {};
 
 .title-team h2 {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: rgb(36, 76, 128);
   padding: 0 50px;
 }

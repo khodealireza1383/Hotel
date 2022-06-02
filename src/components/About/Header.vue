@@ -11,7 +11,7 @@
             <li><router-link to="/room" class="link">اتاق ها </router-link></li>
             <li><router-link to="/blog" class="link"> وبلاگ </router-link></li>
             <li>
-              <router-link to="/" class="link"> درباره ما </router-link>
+              <router-link to="/about" class="link"> درباره ما </router-link>
             </li>
             <li><router-link to="/contact" class="link">تماس با ما </router-link></li>
           </ul>
@@ -76,22 +76,25 @@ export default {
   transition: all 0.5s ease-in-out;
   z-index: 10;
 }
-.navbar.bg-nav{
+.navbar.bg-nav {
   position: fixed;
   top: 0;
- background-color:rgba(36, 76, 128,0.9);
-   height: 100px;
+  background-color: rgba(36, 76, 128, 0.9);
+  height: 100px;
 }
-.navbar.bg-nav .button-login{
-display: flex;
-justify-content: center;
+.navbar.bg-nav .button-login {
+  display: flex;
+  justify-content: center;
 }
-.navbar.bg-nav p{
+.navbar.bg-nav p {
   display: none;
 }
 .header .bg-color {
   width: 100%;
   height: 100%;
+}
+.menu-respansive{
+  display: none;
 }
 .logo {
   width: 30%;
@@ -112,14 +115,13 @@ justify-content: center;
 .nav ul .link {
   color: #fff;
   text-decoration: none;
-  font-size: 27px;
-  transition: all 0.7s ease-in-out;
+  font-size: 21px;
+  transition: all 0.4s ease-in-out;
 }
 .nav ul .link:hover {
 
   text-decoration: none;
-  font-size: 28px;
-
+  font-size: 24px;
 }
 .button-login {
   width: 40%;
@@ -137,38 +139,19 @@ justify-content: center;
   border-radius: 7px;
   border-top: 2px solid rgb(32, 68, 188);
   border-left: 2px solid rgb(32, 68, 188);
-  font-size: 17px;
+  font-size: 14px;
   cursor: pointer;
   position: absolute;
   left: 50px;
 }
 .button-login p {
   color: #fff;
-  font-size: 24px;
+  font-size: 19px;
   position: absolute;
-  left: 40px;
-  top: 60px;
+  left: 45px;
+  top: 62px;
 }
-.active {
-  position: relative;
-}
-.active::before {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  width: 80px;
-  height: 3px;
-  background-color: #fff;
-}
-.active::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  right: 2px;
-  width: 60px;
-  height: 3px;
-  background-color: #fff;
-}
+
 @media only screen and (max-width: 1200px) {
   .header {
   width: 100%;

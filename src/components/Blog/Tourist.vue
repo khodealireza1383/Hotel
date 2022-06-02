@@ -1,8 +1,6 @@
 <template>
   <div class="Tourist">
-    <div class="Title-tourist">
-      <h2>وبلاگ</h2>
-    </div>
+ 
      <!-- ---------- Mashhad sights above ----------------- -->
     <div class="item-tourist">
      
@@ -44,6 +42,7 @@
         </div>
       </div>
     </div>
+    <!-- ---------- Mashhad sights above center----------------- -->
 
        <div class="item-tourist part3">
      
@@ -83,20 +82,9 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin: 80px 0;
 }
-.Title-tourist {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.Title-tourist h2 {
-  color: var(--test);
-  font-size: 4rem;
-  font-weight: 400px;
-}
+
 .item-tourist {
   width: 100%;
   display: flex;
@@ -142,13 +130,12 @@ export default {
 
 .top-item h3 {
   color: #fff;
-  font-size: 40px;
-  font-weight: 400px;
+  font-size: 30px;
   text-align: center;
 }
 .top-item p {
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400px;
   position: relative;
   top: -20px;
@@ -214,17 +201,17 @@ margin-right: 10px;
 }
 .center-item p {
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400px;
   position: relative;
   top: -20px;
    text-align: center;
    box-sizing: border-box;
-   padding: 0 10px
+   padding: 0 5px
 }
 .center-item h3 {
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400px;
   text-align: center;
 }
@@ -260,5 +247,16 @@ font-size: 30px;
 
 }
 @media only screen and (max-width: 768px)  {
+  .item-tourist .top-item {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-item {
+  width: 91%;
+  display: flex;
+  justify-content: center;
+}
 }
 </style>

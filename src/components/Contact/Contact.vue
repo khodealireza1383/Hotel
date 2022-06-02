@@ -32,7 +32,7 @@ export default {};
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../../assets/img/bg-content4.png");
+  background-image: url("../../assets/img/bg-content7.png");
   box-sizing: border-box;
 }
 .bg-back {
@@ -72,7 +72,7 @@ form {
   padding: 30px 40px;
 }
 label {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #fff;
   margin-top: 20px;
 }
@@ -87,7 +87,7 @@ form input {
   padding: 10px;
 }
 form input::placeholder {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: rgb(36, 76, 128);
 }
 input[type="submit"] {
@@ -96,11 +96,13 @@ input[type="submit"] {
   margin-top: 30px;
   background-color: rgb(36, 76, 128);
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  box-sizing: border-box;
+  padding: 10px 0;
 }
 @media only screen and (max-width: 1200px) {
   .contact {

@@ -98,7 +98,7 @@ export default {};
 }
 .News h2 {
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 .News input {
   height: 60px;
@@ -106,15 +106,17 @@ export default {};
   border: none;
   box-sizing: border-box;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   outline: none;
 }
-
+.News p{
+  font-size: 14px;
+}
 .News button {
   height: 60px;
   border-radius: 10px;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--test);
 }
 .img-app {
@@ -125,7 +127,7 @@ export default {};
   flex-direction: column;
 }
 .img-app img {
-  width: 85%;
+  width: 70%;
   box-sizing: border-box;
   padding-top: 40px;
   transition: all 0.3s ease-in;
@@ -143,10 +145,11 @@ export default {};
 }
 .social span {
   color: rgb(58, 111, 179);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .social h2 {
   font-weight: 400;
+  font-size: 1.3rem;
 }
 .social-instagram {
   width: 80%;
@@ -183,14 +186,14 @@ export default {};
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
   background: linear-gradient(to right, rgb(58, 111, 179), var(--test));
   border-radius: 50%;
 }
 @media only screen and (max-width: 1200px) {
   .Media {
-    height: 50vh;
+    height: 70vh;
   }
   .social {
     display: none;
@@ -201,6 +204,7 @@ export default {};
     width: 70%;
     margin-left: 60px;
   }
+  
 }
 @media only screen and (max-width: 768px) {
   .right-box {
@@ -222,7 +226,7 @@ export default {};
 @media only screen and (max-width: 480px) {
   .Media {
   width: 100%;
-  height: 100vh;
+  height: 130vh;
 
 }
   .Container {
@@ -230,7 +234,7 @@ export default {};
 flex-direction: column;
 }
 .img-app {
-  width: 90%;
+  width: 80%;
   flex-direction: column;
 }
 .img-app img{

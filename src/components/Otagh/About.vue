@@ -94,11 +94,9 @@ export default {
 <style scoped>
 .About {
   width: 90%;
-
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: 40px auto;
 }
 .header-about {
   width: 100%;
@@ -126,20 +124,27 @@ export default {
 
 .name {
   position: relative;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .name h3 {
-  font-size: 34px;
+  font-size: 1.7rem;
   color: var(--test);
 }
 .name p {
   position: absolute;
-  bottom: -7px;
+  bottom: -20px;
   color: #4c4c4c;
-  width: 200px;
+  width: 250px;
+  text-align: center;
+  font-size: 0.9rem;
 }
 .star span {
   position: relative;
-  top: 50px;
+  top: 40px;
   right: 30px;
   color: #f6c255;
 }
@@ -165,7 +170,7 @@ export default {
 }
 .text-about-hotel .container {
   width: 90%;
-  height: 120px;
+  height: 100px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 7px;
@@ -192,13 +197,13 @@ export default {
 .more-img img:hover {
   transform: scale(0.9);
 }
-.container .item1 p {
+.item .container .item1 p {
   color: #545353;
-  font-size: 20px;
+  font-size: 1rem;
 }
 .container .item1 span {
   color: var(--test);
-  font-size: 35px;
+  font-size: 1.8rem;
   box-sizing: border-box;
   position: relative;
   top: -15px;
@@ -210,29 +215,26 @@ export default {
 .text-about {
   width: 90%;
 }
-.text-about p {
+.text-about p{
   text-align: justify;
   text-justify: inter-word;
   box-sizing: border-box;
-  padding-right: 30px;
   color: #545353;
-  font-size: 19px;
+  font-size: 1rem;
 }
 @media only screen and (max-width: 1200px) {
   .About {
-    height: 70vh;
+    height: auto;
   }
 }
 @media only screen and (max-width: 1024px) {
   .About {
-    height: 52vh;
-    overflow: hidden;
+    height: auto;
   }
 }
 @media only screen and (max-width: 768px) {
   .About {
-    height: 45vh;
-    overflow: hidden;
+    height: auto;
   }
   .header-about .title {
     padding: 0 20px;
@@ -240,27 +242,29 @@ export default {
   .hr-header {
     width: 94%;
     height: 1px;
-    background-color: #d3cece;
+
     margin: 0 auto;
   }
   .content-Hotel {
-    padding: 0 0px;
+    padding: 0 6px;
   }
+
   .text-about-hotel .container {
     width: 90%;
     height: 90px;
   }
   .container .item1 p {
-    font-size: 16px;
+    font-size: 13px;
   }
   .container .item1 span {
-    font-size: 30px;
+    font-size: 25px;
   }
   .more-img img {
     width: 29%;
     margin-left: 10px;
-    border-radius: 7px;
-    transition: all 0.2s ease-in;
+  }
+  .text-about p {
+    font-size: 0.8rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -268,26 +272,24 @@ export default {
     margin: 0;
   }
   .About {
-    height: 95vh;
+    height: auto;
   }
   .header-about .title {
     flex-direction: column;
-    padding: 0 60px;
+    padding: 0 74px;
   }
   .Name-Hotel {
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
   }
-  .Name-Hotel > * {
-    margin-top: 30px;
-  }
+
   .name p {
     position: absolute;
-    bottom: -20px;
+    bottom: 0px;
   }
-  .star span {
-    position: relative;
-    top: 0px;
+  .star {
+    margin-top: -30px;
   }
   .header-about {
     height: 210px;
@@ -309,20 +311,18 @@ export default {
     width: 93%;
     height: 170px;
   }
-  .text-about-hotel > *{
+  .text-about-hotel > * {
     margin-top: 20px;
   }
   .text-about-hotel .container {
-  width: 92%;
-  height: 70px;
+    width: 92%;
+    height: 70px;
+  }
+  .item1 {
+    margin-top: 10px;
+  }
+  .container .item1 span {
+    top: -10px;
+  }
 }
-.item1{
-  margin-top: 10px;
-}
-.container .item1 span {
-
-  top: -10px;
-}
-}
-
 </style>

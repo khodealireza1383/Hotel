@@ -108,7 +108,10 @@ export default {};
   justify-content: space-between;
   padding: 40px 50px 0 0;
 }
-
+.logo {
+  position: relative;
+  top: 30px;
+}
 .item {
   box-sizing: border-box;
   padding-right: 40px;
@@ -117,11 +120,11 @@ export default {};
 }
 .footer-item .question {
   color: rgb(58, 111, 179);
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-shadow: 1px 0px 5px black;
 }
 .aboutme {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: justify;
   text-justify: inter-word;
   color: #fff;
@@ -135,54 +138,44 @@ export default {};
 .title p,
 .title1 p,
 .title2 p {
-  font-size: 2rem;
+  font-size: 1.4rem;
   position: relative;
 }
-.title p::before {
+.title p::before,
+.title1 p::before,
+.title2 p::before {
   content: "";
   position: absolute;
-  bottom: -3px;
+  bottom: -10px;
   right: 10px;
   height: 1px;
-  width: 100px;
+  width: 90px;
   background-color: #fff;
+}
+.title1 p::before{
+  width: 70px;
+  right: 0;
+}
+.title2 p::before{
+  width: 170px;
+  right: 0;
 }
 .nav1 {
   position: relative;
   left: 25px;
 }
 .nav li {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin-top: 30px;
   position: relative;
   left: 20px;
 }
-.title1 p::before {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  height: 1px;
-  width: 70px;
-  background-color: #fff;
-}
 
-.title2 p::before {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  right: 10px;
-  height: 1px;
-  width: 170px;
-  background-color: #fff;
-}
 .top-item {
   padding-bottom: 70px;
 }
 .margin-right1 {
   padding-right: 30px;
-}
-.nav2 ul {
-  list-style: none;
 }
 .malek {
   width: 100%;
@@ -191,13 +184,10 @@ export default {};
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   background-color: var(--test);
 }
-.logo {
-  position: relative;
-  top: 30px;
-}
+
 .social-media ul {
   display: none;
 }
@@ -216,7 +206,7 @@ export default {};
   }
   .question h3 {
     width: 350px;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -270,7 +260,7 @@ export default {};
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .margin-right1 {
     width: 100%;

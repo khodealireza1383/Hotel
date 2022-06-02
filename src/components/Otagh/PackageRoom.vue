@@ -179,7 +179,9 @@
           <span>{{ fourGuest.price }}</span>
         </div>
         <div class="button-rezerv">
-          <button class="button">رزرو اتاق <span class="material-icons"> shopping_cart </span></button>
+          <button class="button">
+            رزرو اتاق <span class="material-icons"> shopping_cart </span>
+          </button>
         </div>
       </div>
     </div>
@@ -474,7 +476,7 @@ li:nth-child(4).show ~ .circle {
   margin-right: 30px;
 }
 .name-room p {
-  font-size: 23px;
+  font-size: 1.1rem;
   color: rgb(65, 65, 67);
   font-weight: 300;
 }
@@ -483,6 +485,7 @@ li:nth-child(4).show ~ .circle {
   color: #fff;
   padding: 7px;
   border-radius: 20px;
+  font-size: 14px;
 }
 .price {
   position: relative;
@@ -490,11 +493,11 @@ li:nth-child(4).show ~ .circle {
 }
 .price p {
   color: rgb(117, 117, 117);
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 .price span {
   color: var(--test);
-  font-size: 26px;
+  font-size: 1.3rem;
   position: relative;
   top: -20px;
   font-weight: 600;
@@ -513,13 +516,14 @@ li:nth-child(4).show ~ .circle {
     height: 150px;
     border-radius: 10px;
   }
+  .price {
+    margin-top: 25px;
+    margin-left: 20px;
+  }
   .price span {
-    color: var(--test);
-    font-size: 23px;
+    font-size: 18px;
     position: relative;
     top: -20px;
-    left: 20px;
-    font-weight: 600;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -534,24 +538,21 @@ li:nth-child(4).show ~ .circle {
   .item-room {
     padding: 10px 5px;
   }
-  .name-room p {
-    font-size: 15px;
-    color: rgb(65, 65, 67);
-    font-weight: 300;
+  .name-room p,
+      .name-room span {
+    font-size: 13px;
   }
-  .button-rezerv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: center;
+  .price p,
+  .price span {
+    font-size: 14px;
   }
+
   .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 50px;
     font-size: 12px;
   }
 }
@@ -585,67 +586,67 @@ li:nth-child(4).show ~ .circle {
     transition: all 0.2s ease-in;
   }
   .item-room {
-  flex-direction: column;
- 
-}
-.item-room:hover{
-box-shadow: 0px 0px 10px var(--test);
-background: linear-gradient(to right, rgb(58, 111, 179), var(--test));
-  transform: scale(0.93);
-
-}
-.item-room:hover .name-room p,
-.item-room:hover .price p{
-  color: #fff;
-  
-}
-.item-room:hover .price span{
-  color: #fff;
-}
-.done-false{
-  display: none;
-}
-.img-room img {
-  width: 270px;
-  height: 150px;
-  border-radius: 10px;
-}
-.Capacity{
-  display: none;
-}
-.name-room p {
-  font-size:1.5rem;
-}
-.name-room{
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction:column ;
-}
-.name-room span {
-padding: 7px;
-}
-.button-rezerv{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
-}
-.button{
-  width: 130px;
-  height: 50px;
-  font-size:0.8rem;
-  border: none;
-}
-.container-room .box-room {
-display: none;
-}
-.title-room{
-  height: 100px;
-}
-.widthHover{
-opacity: 0;
-}
+    flex-direction: column;
+  }
+  .item-room:hover {
+    box-shadow: 0px 0px 10px var(--test);
+    background: linear-gradient(to right, rgb(58, 111, 179), var(--test));
+    transform: scale(0.93);
+  }
+  .item-room:hover .name-room p,
+  .item-room:hover .price p {
+    color: #fff;
+  }
+  .item-room:hover .price span {
+    color: #fff;
+  }
+  .done-false {
+    display: none;
+  }
+  .img-room img {
+    width: 270px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .Capacity {
+    display: none;
+  }
+  .name-room p {
+    font-size: 1.5rem;
+  }
+  .name-room {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .name-room span {
+    padding: 7px;
+  }
+  .button-rezerv {
+    display: flex;
+    width: 130px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .button {
+    width: 130px;
+    height: 50px;
+    font-size: 0.8rem;
+    border: none;
+  }
+  .container-room .box-room {
+    display: none;
+  }
+  .title-room {
+    height: 100px;
+  }
+  .widthHover {
+    opacity: 0;
+  }
 }
 </style>
