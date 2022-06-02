@@ -5,7 +5,7 @@
     <div class="item-tourist">
      
       <div class="top-item">
-        <div class="left-top-item  hover-Tourist">
+        <div class="left-top-item  hover-Tourist none">
           <div class="bg-color">
             <h3>{{ title }}</h3>
             <p>{{ text }}</p>
@@ -22,19 +22,19 @@
     <!-- ---------- Mashhad sights above center----------------- -->
     <div class="item-tourist2">
       <div class="center-item">
-        <div class="left-center-item hover-Tourist">
+        <div class="left-center-item hover-Tourist none">
           <div class="bg-color2">
  <h3>{{ title }}</h3>
             <p>{{ text }}</p>
           </div>
         </div>
-        <div class="center-center-item hover-Tourist">
+        <div class="center-center-item hover-Tourist ">
           <div class="bg-color2">
  <h3>{{ title }}</h3>
             <p>{{ text }}</p>
           </div>
         </div>
-           <div class="right-center-item hover-Tourist">
+           <div class="right-center-item hover-Tourist none">
           <div class="bg-color2">
  <h3>{{ title }}</h3>
             <p>{{ text }}</p>
@@ -53,7 +53,7 @@
             <p>{{ text }}</p>
           </div>
         </div>
-        <div class="left-top-item hover-Tourist">
+        <div class="left-top-item hover-Tourist none">
           <div class="bg-color">
             <h3>{{ title }}</h3>
             <p>{{ text }}</p>
@@ -126,6 +126,10 @@ export default {
   background-color: rgba(36, 76, 128, 0.67);
   border-radius: 8px;
   transition: all 0.6s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .top-item h3 {
@@ -257,6 +261,37 @@ font-size: 30px;
   width: 91%;
   display: flex;
   justify-content: center;
+}
+}
+@media only screen and (max-width: 480px)  {
+.Tourist {
+  margin: 40px 0;
+}
+
+.none{
+  display: none;
+}
+.center-item {
+  width: 100%;
+
+}
+.item-tourist .top-item {
+  width: 100%;
+  margin-right: 20px;
+}
+.right-top-item {
+  width: 83%;
+  height: 300px;
+}
+
+.center-center-item {
+  width: 80%;
+   height:300px;
+
+}
+.part3{
+  margin-top:15px;
+  margin-right:0;
 }
 }
 </style>

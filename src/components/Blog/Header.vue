@@ -235,4 +235,66 @@ export default {
     display: none;
   }
 }
+@media only screen and (max-width: 480px) {
+
+  /* nav */
+  .header{
+    height: 70vh
+  }
+  .navbar {
+  height: 120px;
+}
+    .nav {
+    width:900px;
+    height:470px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    z-index: 10;
+    opacity: 0.9;
+  }
+  .nav ul {
+    width: 100%;
+    height: 100%;
+    margin-right: 150%;
+    padding:40px 60px;
+ }
+  .nav ul::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: rgb(58, 111, 179);
+    position: absolute;
+    top: -4px;
+    left: 56px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  .nav ul.shownav {
+    margin-right: 40%;
+  }
+  .button-login {
+    display: none;
+  }
+  .logo {
+    width:80%;
+    cursor: pointer;
+  }
+  .menu-respansive {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    color: #fff;
+    z-index: 10;
+  }
+  .menu-respansive span {
+    font-size: 2rem;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+
+}
 </style>

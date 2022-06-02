@@ -27,12 +27,12 @@
         <h3>تیم فرانت اند</h3>
         <div class="bg"></div>
       </div>
-      <div class="box-img">
+      <div class="box-img ">
         <img src="../../assets/img/team1.webp" alt="" class="team-img1" />
         <h3>تیم فرانت اند</h3>
         <div class="bg"></div>
       </div>
-      <div class="box-img">
+      <div class="box-img none" >
         <img src="../../assets/img/team3.webp" alt="" class="team-img1" />
         <h3>تیم فرانت اند</h3>
         <div class="bg"></div>
@@ -54,7 +54,7 @@
         <h3>تیم فرانت اند</h3>
         <div class="bg"></div>
       </div>
-      <div class="box-img ">
+      <div class="box-img none">
         <img src="../../assets/img/team6.webp" alt="" class="team-img1" />
         <h3>تیم فرانت اند</h3>
         <div class="bg"></div>
@@ -89,7 +89,6 @@ export default {};
   font-weight: 400;
   font-size: 2.7rem;
   color: var(--test);
-
 }
 
 .text-About p {
@@ -98,7 +97,6 @@ export default {};
   text-justify: inter-word;
   font-size: 1.2rem;
   color: rgb(78, 93, 112);
-
 }
 .container .img-About {
   width: 50%;
@@ -211,10 +209,10 @@ export default {};
 }
 @media only screen and (max-width: 1024px) {
   .text-About h2 {
-  font-weight: 400;
-  font-size: 2.7rem;
-  padding: 0 10px;
-}
+    font-weight: 400;
+    font-size: 2.7rem;
+    padding: 0 10px;
+  }
   .text-About p {
     width: 90%;
     font-size: 1.1rem;
@@ -222,31 +220,78 @@ export default {};
   }
 }
 @media only screen and (max-width: 768px) {
-.img-About{
-  width: 60%;
+  .text-About h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+  .text-About p {
+    width: 90%;
+    font-size: 0.9rem;
+    margin-top: -30px;
+  }
+  .title-team {
+    height: 130px;
+    padding: 0 0px;
+  }
+  .title-team h2 {
+    font-size: 1.3rem;
+  }
+  .img-About {
+    width: 50%;
+  }
+  .container .img-About img {
+    width: 100%;
+    height: 360px;
+  }
+  .box-img {
+    width: 32%;
+    height: 450px;
+  }
+  .none {
+    display: none;
+  }
 }
-.container .img-About img {
-  width: 100%;
-  border-radius: 15px;
-  height: 400px;
+@media only screen and (max-width: 480px) {
+  .container {
+    flex-direction: column-reverse;
+    margin-top: 40px;
+    padding: 0 0px;
+  }
+}
+.text-About {
+  padding-right: 20px;
+  width: 90%;
+}
+.container .img-About {
+  width: 90%;
+}
+.title-team{
+  text-align: center;
+}
+.title-team h2{
+  font-weight: 600;
 }
 .img-top {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
-}
-.img-bottom {
-  flex-wrap: wrap;
-position: relative;
-top: -5px;
 }
 .box-img {
-  width: 32%;
-  height: 450px;
-  border-radius: 10px;
-  position: relative;
-  transition: all 0.4s linear;
+  width: 45%;
 }
-.none{
-  display: none;
+.box-img h3 {
+font-size: 13px;
 }
+.img-bottom {
+  width: 100%;
+  height: 580px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 </style>

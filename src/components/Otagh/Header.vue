@@ -164,7 +164,9 @@ export default {
   }
 
 }
+
 @media only screen and (max-width: 1024px) {
+
   .header {
     height: 55vh;
   }
@@ -174,7 +176,9 @@ export default {
   }
 
 }
+
 @media only screen and (max-width: 768px) {
+
   .header {
     height: 67vh;
   }
@@ -246,6 +250,7 @@ export default {
   }
 }
 @media only screen and (max-width: 480px) {
+
   /* nav */
   .header{
     height: 70vh

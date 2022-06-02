@@ -109,29 +109,56 @@ input[type="submit"] {
     height: 80vh;
   }
   .bg .img-contact img {
-  height: 50vh;
-}
+    height: 50vh;
+  }
 }
 @media only screen and (max-width: 768px) {
-
-.contact {
-    height: 70vh;
+  .contact {
+    height: 75vh;
   }
   .bg-back {
-  width: 80%;
-}
-
-.bg {
-  width: 98%;
-}
+    width: 80%;
+  }
+  .bg {
+    width: 98%;
+  }
   .bg .img-contact img {
-  height: 48vh;
+    height: 65vh;
+  }
+  label {
+    font-size: 1.1rem;
+  }
+  form input {
+    width: 100%;
+  }
+  input[type="submit"] {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    background-color: rgb(36, 76, 128);
+    color: #fff;
+    font-size: 1rem;
+  }
 }
-label{
-  font-size: 1.5rem;
+@media only screen and (max-width: 480px) {
+  .contact {
+    height: 70vh;
+  
+  }
+  .bg {
+    flex-direction: column-reverse;
+    background-image: url("../../assets/img/bg-contact2.jpg");
+    background-size: cover;
+  }
+  .bg .img-contact {
+    display: none;
+  }
+  .input-contact {
+  width: 100%;
 }
-form input {
-  width: 95%;
-}
+  .label{
+    width: 100%;
+    font-size: 1.3rem;
+  }
 }
 </style>
